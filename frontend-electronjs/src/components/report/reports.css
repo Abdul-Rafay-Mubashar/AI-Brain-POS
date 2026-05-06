@@ -1,0 +1,267 @@
+.reports-container{
+    width: 81%;
+    height: auto;
+    min-height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D1117;
+
+}
+
+.reports-box{
+    /* justify-content: center; */
+    align-items: center;
+    width: 95%;
+    min-height: 99%;
+    height: auto;
+    background-color: #121212;
+}
+.reports-box-head{
+    width: 100%;
+    min-height: 9vh;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: antiquewhite;
+    height: auto;
+    border-bottom:solid #333333 1px;
+}
+
+
+
+
+.bills-section {
+    color: white;
+    padding-top: 10px;
+    font-family: sans-serif;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.bills-header {
+    display: flex;
+    /* justify-content: center; */
+    padding-top: 15px;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.nav-arrows {
+    display: flex;
+    gap: 15px;
+    color: #555;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Horizontal Scroll Container */
+.bills-container {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+
+    
+
+
+}
+
+.bills-container::-webkit-scrollbar {
+    display: none; 
+}
+
+
+.bill-card {
+    min-width: 140px;
+    background-color: #2C2C2C;
+    padding: 15px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bill-id {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.bill-detail {
+    font-size: 0.8rem;
+    color: #bbb;
+    margin-bottom: 12px;
+}
+
+.bill-label {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.bill-amount {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.open-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: #5ab2da;
+    border: none;
+    border-radius: 6px;
+    color: #121212;
+    font-weight: bold;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.open-btn:hover {
+    background-color: #4a9ec4;
+}
+
+.bottom-divider {
+    height: 1px;
+    background-color: #333;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.dashboard-wrapper {
+    display: flex;
+    flex-direction: row; /* Start as a row */
+    flex-wrap: wrap;     /* Allow items to wrap to the next line */
+    gap: 20px;
+    padding-top: none;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.report-card {
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #2C2C2C;
+    /* This is the key: 
+       flex-grow: 1 (stretch to fill space)
+       flex-shrink: 1 (shrink if needed)
+       flex-basis: 320px (ideal starting width) */
+    flex: 1 1 320px; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px;
+    box-sizing: border-box;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+h3 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 5px 0 15px 0;
+}
+
+.date-btn {
+    background-color: #333;
+    color: #ccc;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.date-btn.bottom {
+    align-self: flex-start;
+    margin-top: 15px;
+}
+
+/* Stats Styling */
+.stat-item {
+    margin-bottom: 15px;
+}
+
+.stat-item label, .stats-footer label {
+    display: block;
+    font-size: 0.85rem;
+    color: #bbb;
+}
+
+.stat-item .value {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* Simulated Charts */
+.bar-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.bar {
+    flex: 1;
+    background-color: #5ab2da;
+    border-radius: 2px 2px 0 0;
+}
+
+.donut-container {
+    text-align: center;
+}
+
+.donut-chart {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 8px solid #333;
+    /* border-top: 8px solid #5ab2da;  */
+    margin: 10px auto;
+}
+
+.monthly-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+.stats-footer strong {
+    font-size: 0.9rem;
+}
+
+/* Mobile Tweak */
+@media (max-width: 400px) {
+    .dashboard-wrapper {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}

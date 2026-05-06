@@ -1,0 +1,105 @@
+.report-card {
+    background-color: #2C2C2C;
+    padding: 20px;
+    border-radius: 12px;
+    width: 350px;
+    color: white;
+    font-family: sans-serif;
+}
+
+h3 { font-size: 1rem; margin: 0; font-weight: 600; }
+.subtitle { font-size: 0.75rem; color: #888; margin: 4px 0 20px 0; }
+
+/* Chart Layout */
+.chart-container {
+    display: flex;
+    height: 180px;
+    margin-bottom: 25px;
+}
+
+.y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: #888;
+    padding-right: 10px;
+    text-align: right;
+    width: 45px;
+}
+
+.chart-area {
+    position: relative;
+    flex-grow: 1;
+    border-left: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+
+/* Horizontal Grid Lines */
+.grid-lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grid-line {
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+}
+
+/* Bars */
+.bars-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.bar-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.bar-week {
+    width: 100%;
+    background-color: #5ab2da;
+    border-radius: 2px 2px 0 0;
+    transition: height 0.5s ease;
+}
+
+.day-label {
+    font-size: 0.7rem;
+    color: #888;
+    margin-top: 8px;
+    position: absolute;
+    bottom: -20px;
+}
+
+/* Footer Stats */
+.stats-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.stat-box label {
+    display: block;
+    font-size: 0.75rem;
+    color: #bbb;
+    margin-bottom: 4px;
+}
+
+.stat-box strong {
+    font-size: 0.95rem;
+}

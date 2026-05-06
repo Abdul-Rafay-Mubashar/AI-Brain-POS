@@ -1,0 +1,192 @@
+.billing-container{
+    width: 81%;
+    background-color: #0D1117;
+
+    height: auto;
+    min-height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.billing-box{
+    /* justify-content: center; */
+    align-items: center;
+    width: 95%;
+    min-height: 99%;
+    height: auto;
+}
+.billing-box-head{
+    width: 100%;
+    min-height: 9vh;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: antiquewhite;
+    height: auto;
+    padding: 9px;
+}
+
+.billing-box-search{
+    width: 100%;
+    min-height: 11vh;
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    color: antiquewhite;
+    height: auto;
+    background-color: #212121;
+    padding: 9px;
+}
+.billing-box-search-head{
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: antiquewhite;
+    height: auto;
+}
+
+.billing-box-search-container{
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    height: auto;
+}
+.billing-box-search-container h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: start;
+}
+.input-group-invent {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* The Search Input Wrapper */
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-wrapper input {
+  background-color: #2a2a2a;
+  border: 1px solid #3f3f3f;
+  border-radius: 6px;
+  color: #a0a0a0;
+  padding: 10px 35px 10px 12px;
+  width: 280px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-wrapper input:focus {
+  border-color: #555;
+}
+
+/* The Search Icon */
+.search-icon {
+  position: absolute;
+  right: 12px;
+  color: #777;
+  transform: rotate(-45deg);
+  font-size: 18px;
+  pointer-events: none;
+}
+
+/* The Blue Button */
+.add-btn {
+  background-color: #4da6e0;
+  color: #121212;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-weight: bold;
+  font-size: 19px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #62bdf5;
+}
+
+.table-container {
+  width: 100%;
+  background-color: #2F2F2F; /* Matches the dark background */
+  /* padding: 20px; */
+  border-radius: 8px;
+  max-height: 78vh;
+  overflow-y: scroll;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse; /* Removes gaps between cells */
+  color: #e0e0e0;
+  font-family: sans-serif;
+  font-size: 14px;
+  
+}
+
+/* Header Styling */
+.product-table thead {
+  background-color: #2F2F2F;
+
+}
+
+.product-table th {
+  text-align: left;
+  padding: 12px 15px;
+  font-weight: 500;
+  color: #cccccc;
+  border-bottom: 1px solid #333;
+  text-align: center;
+  
+}
+
+/* Row and Cell Styling */
+.product-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #2a2a2a; /* Thin divider lines */
+  background-color: #2F2F2F;
+}
+
+.product-table tr:hover {
+
+  background-color: #0f0f0f;
+}
+
+/* Center numbers like in the image */
+.product-table td:nth-child(3), 
+.product-table td:nth-child(4), 
+.product-table td:nth-child(5) {
+  text-align: center;
+}
+
+/* Icon Styling */
+.actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.edit-icon:hover { color: #4da6e0; }
+.delete-icon:hover { color: #ff5c5c; }
+
+/* Optional: Row Hover effect */
+.product-table tbody tr:hover {
+  background-color: #222222ef;
+}

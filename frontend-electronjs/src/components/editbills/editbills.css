@@ -1,0 +1,369 @@
+.billing-container{
+    width: 81%;
+    height: auto;
+    min-height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        background-color: #0D1117;
+
+}
+
+.billing-box{
+    /* justify-content: center; */
+    align-items: center;
+    width: 95%;
+    min-height: 99%;
+    height: auto;
+}
+.billing-box-head{
+    width: 100%;
+    min-height: 13vh;
+    background-color: #1B1B1B;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    height: auto;
+}
+
+
+.table-container-billing {
+  width: 100%;
+  background-color: #1a1a1a; /* Matches the dark background */
+  /* padding: 20px; */
+  height: 87vh;
+  border-radius: 8px;
+  max-height: 87vh;
+  min-height: 510px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.search-detail-container{
+    width: 37%;
+    height: 95%;
+    /* background-color: black; */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.bill-board-container{
+    width: 60%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.bill-confirmations-container{
+    /* width: 100%;
+    height: 28%; */
+    border-radius: 8px;
+      background-color: #1a1a1a;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end; /* Aligns the box to the right */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bill-board-box {
+  width: 100%;
+  background-color: #1a1a1a; /* Matches the dark background */
+  /* padding: 20px; */
+  border-radius: 8px;
+  max-height: 67%;
+  overflow-y: auto;
+}
+.product-table {
+  width: 100%;
+  border-collapse: collapse; /* Removes gaps between cells */
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+   background-color: black;
+   height: 81%;
+
+}
+
+/* Header Styling */
+.product-table thead {
+  background-color: #242424;
+
+}
+
+.product-table th {
+  text-align: left;
+  padding: 12px 15px;
+  font-weight: 500;
+  color: white;
+  border-bottom: 1px solid #333;
+  text-align: center;
+  
+}
+
+/* Row and Cell Styling */
+.product-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #2a2a2a; /* Thin divider lines */
+}
+
+/* Center numbers like in the image */
+.product-table td:nth-child(3), 
+.product-table td:nth-child(4), 
+.product-table td:nth-child(5) {
+  text-align: center;
+}
+
+/* Icon Styling */
+.actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.edit-icon:hover { color: #4da6e0; }
+.delete-icon:hover { color: #ff5c5c; }
+
+/* Optional: Row Hover effect */
+.product-table tbody tr:hover {
+  background-color: #222222;
+}
+
+/* Container to mimic the dark background in your image */
+
+
+/* The main card/box */
+.summary-box {
+  background-color: #2c2c2c;
+  border: 1px solid #3d3d3d;
+  border-radius: 12px;
+  padding: 20px 25px;
+  min-width: 300px;
+  width: 61%;
+  height: 89%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Aligns button to the right */
+  gap: 15px;
+}
+
+/* Row containing text and price */
+.amount-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* The blue action button */
+.print-btn {
+  background-color: #5bb4e5;
+  color: #000000;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.print-btn:hover {
+  background-color: #4da3d1;
+}
+
+.print-btn:active {
+  transform: scale(0.98);
+}
+
+
+
+
+.card {
+    background-color: #212121;
+    width: 320px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    color: white;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.input-group-search-edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+    width: 93%;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+    color: white;
+}
+
+/* Inputs & Boxes */
+.search-input, .display-box, .input-box {
+    width: 100%;
+    padding: 10px;
+    background-color: #2c2c2c;
+    border: 1px solid #3d3d3d;
+    border-radius: 4px;
+    color: white;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Specific Highlight for the Active Search */
+.search-input {
+    border-color: #5ab2da;
+    outline: none;
+}
+
+/* Simulated Dropdown */
+.dropdown {
+    background-color: #2c2c2c;
+    border: 1px solid #3d3d3d;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+
+.dropdown-item {
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: white;
+    display: flex;
+
+}
+
+.dropdown-item:hover {
+    background-color: #3d3d3d;
+}
+
+/* Read-only / Info styles */
+.info-text {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.display-box {
+    background-color: #262626;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.search-container-edit{
+  width: 100%;
+}
+/* Button */
+.add-button-edit {
+    width: 93%;
+    padding: 12px;
+    background-color: #5ab2da;
+    border: none;
+    border-radius: 4px;
+    color: #121212;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+    margin-top: 18%;
+}
+
+.add-button-edit:hover {
+    background-color: #4a9ec4;
+}
+/* Custom styling for inputs inside the table */
+.product-table input {
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    color: white;
+    text-align: center;
+}
+
+.edit-icon, .delete-icon, .save-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+}
+
+.edit-icon:hover { color: #007bff; transform: scale(1.2); }
+.delete-icon:hover { color: #dc3545; transform: scale(1.2); }
+.save-icon:hover { transform: scale(1.2); }
+
+/* Modal Background Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dim effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content Box */
+.popup-content {
+    background: #1c1c1c;
+    border: 1px solid #444;
+    padding: 25px;
+    border-radius: 12px;
+    min-width: 400px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+}
+
+.close-modal-btn {
+    background: transparent;
+    border: none;
+    color: #888;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close-modal-btn:hover {
+    color: white;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.edit-input {
+    width: 80px;
+    background-color: #333 !important;
+    color: #fff !important;
+    border: 1px solid #555 !important;
+}
+
+.button-row {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.button-row button {
+    flex: 1;
+}

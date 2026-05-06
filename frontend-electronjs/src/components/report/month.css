@@ -1,0 +1,34 @@
+.donut-chart {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+        border: none;
+
+    /* Use the variable --p here */
+    /* We rotate -90deg so 0% starts at the top (12 o'clock) */
+    background: conic-gradient(
+        #58b9e5 calc(var(--p) * 1%), 
+        #333333 0
+    );
+    transform: rotate(0deg); 
+    position: relative;
+}
+
+.donut-inner {
+    width: 70px;
+    height: 70px;
+    background-color: #212121;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    /* Reset rotation for the text so it's not tilted */
+    transform: rotate(0deg); 
+}
