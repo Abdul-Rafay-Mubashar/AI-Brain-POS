@@ -211,7 +211,10 @@ A full **desktop POS application** built using Electron + React.
 
 # 📱 React Native Mobile App (Companion System)
 
+---
+
 ## 📌 Overview
+
 📍 A lightweight React Native mobile application connected to the Smart POS backend for remote monitoring, reporting, and secure biometric access.
 
 ---
