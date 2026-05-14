@@ -209,6 +209,73 @@ A full **desktop POS application** built using Electron + React.
 
 ---
 
+📱 React Native Mobile App (Companion System)
+
+📌 Overview
+
+📍 A lightweight React Native mobile application connected to the Smart POS backend for remote monitoring, reporting, and secure biometric access.
+
+🧾 Features
+📱 Mobile Dashboard
+
+📍 Real-time sales overview
+📍 Profit summary
+📍 Recent transactions
+
+🔍 Bill Viewing System
+
+📍 Search bills by ID
+📍 Search by date
+📍 Search by month
+📍 Full bill details view
+
+📤 Share Bill System
+
+📍 Share bill as PDF
+📍 Share via WhatsApp
+📍 Share via Email
+📍 Generate shareable invoice link
+
+📊 Reports Dashboard
+
+📍 Daily reports
+📍 Weekly reports
+📍 Monthly reports
+📍 Custom date range reports
+📍 Sales & profit analytics
+
+📥 Download Reports
+
+📍 Download reports as PDF
+📍 Save locally on device
+📍 Share instantly
+
+📅 Date-wise Analytics
+
+📍 Day-wise filtering
+📍 Month-wise filtering
+📍 Custom date selection
+📍 Charts for sales & profit trends
+
+🔐 Finger Login (Biometric Authentication)
+
+📍 Fingerprint login (Android BiometricPrompt / iOS FaceID fallback)
+📍 One-tap authentication
+📍 Secure login (no biometric data stored on server)
+📍 JWT session generated after successful login
+📍 PIN/password fallback option
+
+📊 Report System UI
+
+📍 Today
+📍 Last Week
+📍 Last Month
+📍 Custom Date Range
+📍 Download Reports as PDF
+📍 View Bill Details
+
+---
+
 # 🔗 SYSTEM INTEGRATION FLOW
 
 ---
